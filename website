@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stock-blog</title>
+</head>
+
+
+
+<body>
+
+
+<h1 style="text-align:center;font-size:50px;">Welcome to stock-blog</h1>
+<p style="color:blue;text-align:center;font-size:40px;">This site is 100% legit</p>
+
+
+
+<div style="text-align:left;">
+	
+	<canvas id="myCanvas" width="1903" height="300" style="background-color:#545454;"></canvas>
+
+</div>
+<script>
+
+
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.font = "20px Georgia";
+ctx.textAlign="left";
+ctx.font = "16px Verdana";
+
+ctx.fillStyle = "#fafafa";
+ctx.fillText("Contact us:       kelli.stock-blog@gmail.com", 10, 50);
+
+
+c.style.left="0px";
+c.style.top="670px";
+c.style.position="absolute";
+
+
+</script>
+</body>
+</html>
