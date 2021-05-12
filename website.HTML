@@ -11,36 +11,68 @@
 <body>
 
 
-<h1 style="text-align:center;font-size:50px;">Welcome to stock-blog</h1>
+
+<h1 style="text-align:center;font-size:50px;">Welcome to Stock-blog</h1>
 <p style="color:blue;text-align:center;font-size:40px;">This site is 100% legit</p>
+
 
 
 
 <div style="text-align:left;">
 	
 	<canvas id="myCanvas" width="1903" height="300" style="background-color:#545454;"></canvas>
+  <canvas id="myCanvas2" width="1903" height="70" style="background-color:#000000;"></canvas>
+  
 
 </div>
-<script>
+<div style="position:relative;left:110px;top:482px;font-size:21px;">
+	<a href="mailto:kelli.stock-blog@gmail.com?subject=subject">kelli.stock-blog@gmail.com</a>
+</div>
+	<script>
+
+ 	var t = document.getElementById("myCanvas2");
+  var ctx = t.getContext("2d");
+    
+  t.style.left="0px";
+  t.style.top="300px";
+  t.style.position="absolute";
+	
+    
+    
+    
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+
+  ctx.font = "20px Georgia";
+  ctx.textAlign="left";
+  ctx.font = "16px Verdana";
+
+  ctx.fillStyle = "#fafafa";
+  ctx.fillText("Contact us:", 10, 50);
 
 
+  c.style.left="0px";
+  c.style.top="670px";
+  c.style.position="absolute";
+	
+  
+    
+    
 
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
+  </script>
 
-ctx.font = "20px Georgia";
-ctx.textAlign="left";
-ctx.font = "16px Verdana";
-
-ctx.fillStyle = "#fafafa";
-ctx.fillText("Contact us:       kelli.stock-blog@gmail.com", 10, 50);
-
-
-c.style.left="0px";
-c.style.top="670px";
-c.style.position="absolute";
-
-
-</script>
-</body>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
