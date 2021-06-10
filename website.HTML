@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +18,7 @@
   border: none;
   color: white;
   padding: 11px 15px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
 	position:relative;bottom:8px;right:8px;
   border:1px solid black;
@@ -33,7 +32,7 @@
   border: none;
   color: white;
   padding: 11px 15px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   position:relative;bottom:8px;right:12px;
 	border:1px solid black;
@@ -50,7 +49,7 @@
   border: none;
   color: white;
   padding: 11px 15px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   position:relative;bottom:8px;right:16px;
 	border:1px solid black;
@@ -64,7 +63,7 @@
   border: none;
   color: white;
   padding: 11px 15px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   position:relative;bottom:8px;right:20px;
 	border:1px solid black;
@@ -77,8 +76,8 @@
 	background-color: #696969;
   border: none;
   color: white;
-  padding: 11px 15px;
-  font-size: 16px;
+  padding: 11px 20px;
+  font-size: 20px;
   cursor: pointer;
   position:relative;bottom:8px;right:24px;
 	border:1px solid black;
@@ -87,11 +86,24 @@
   	color:#1c1c1c;
 	}
   
+  
+  
+body {
+    overflow-x: hidden !important;
+}
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 </style>
 
 
 <body>
-   
+  <canvas id="myCanvas2" width="1903" height="45" style="background-color:#696969;border:1px solid black;"></canvas>
+  
+  
+  
   <nav role="navigation">
 
     <button class="btn"><i class="fa fa-home"></i> Home</button>
@@ -100,21 +112,21 @@
        
 		<button class="Watchlist"> Watchlist </button>
     
-    <button onclick="window.location.href='https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html';" class="Beginnersguide"> Beginner's guide </button>
+    <button class="Beginnersguide"> Beginner's guide </button>
       
     <button onclick="window.location.href='https://stock-blog.github.io/stock/Discuss.HTML';" class="Discuss"> Discuss </button>
   </nav>
   
   
 
-<h1 style="text-align:center;position:relative;top:70px;font-size:50px;">Welcome to Stock-blog</h1>
+
 
 
 
 <div style="text-align:left;">
   
-  <canvas id="myCanvas" width="1903" height="300" style="background-color:#545454;"></canvas>
-
+  <canvas id="myCanvas" width="1904" height="300" style="background-color:#545454;"></canvas>
+	
 
 </div>
 <div style="position:relative;left:110px;top:601px;font-size:20px;">
@@ -128,8 +140,15 @@
   
   
   <script>
+	var c = document.getElementById("myCanvas2");
+  var ctx = c.getContext("2d");
 
 
+  c.style.left="0px";
+  c.style.top="0px";
+  c.style.position="absolute";
+
+    
     
     
   var c = document.getElementById("myCanvas");
