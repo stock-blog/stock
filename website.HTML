@@ -1,44 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stock-blog</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
   
   a:link {
   color:white;
   }
-  li a{
-  display:block;
-  width: 60px;
-  height:60px;
-  background-color: #000000;
-  }
-  ul {
-  	list-style-type: none;
-  }
-header .nav-ul a{
-  	text-align:center;
-    padding: 15px 15px;
-    text-transform: uppercase;
-    
+
+
+.btn {
+  background-color: #696969;
+  border: none;
+  color: white;
+  padding: 11px 15px;
+  font-size: 16px;
+  cursor: pointer;
+	position:relative;bottom:8px;right:8px;
+  border:1px solid black;
+}  
+.btn:hover {
+  color: #1c1c1c;
+} 
+  
+.Stock_picks {
+	background-color: #696969;
+  border: none;
+  color: white;
+  padding: 11px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  position:relative;bottom:8px;right:12px;
+	border:1px solid black;
+}  
+.Stock_picks:hover{
+  	color:#1c1c1c;
   }
   
+ 
+ 
   
+.Watchlist {
+	background-color: #696969;
+  border: none;
+  color: white;
+  padding: 11px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  position:relative;bottom:8px;right:16px;
+	border:1px solid black;
+}  
+.Watchlist:hover{
+  	color:#1c1c1c;
+  }  
+  
+.Beginnersguide {
+	background-color: #696969;
+  border: none;
+  color: white;
+  padding: 11px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  position:relative;bottom:8px;right:20px;
+	border:1px solid black;
+}  
+.Beginnersguide:hover{
+  	color:#1c1c1c;
+	}
+  
+.Discuss {
+	background-color: #696969;
+  border: none;
+  color: white;
+  padding: 11px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  position:relative;bottom:8px;right:24px;
+	border:1px solid black;
+}  
+.Discuss:hover{
+  	color:#1c1c1c;
+	}
   
 </style>
 
 
 <body>
-   <header role="banner">
-    <nav role="navigation">
-      <ul class="nav-ul">
-        <li><a href="#">Home</a></li>
-      </ul>
-    </nav>
-  </header>
+   
+  <nav role="navigation">
+
+    <button class="btn"><i class="fa fa-home"></i> Home</button>
+  	
+    <button class="Stock_picks"> Stock picks</button>
+       
+		<button class="Watchlist"> Watchlist </button>
+    
+    <button class="Beginnersguide"> Beginner's guide </button>
+      
+    <button onclick="window.location.href='LINKKIKELLIEITOIMIKUINVÄLILLÄ';" class="Discuss"> Discuss </button>
+  </nav>
+  
   
 
 <h1 style="text-align:center;position:relative;top:70px;font-size:50px;">Welcome to Stock-blog</h1>
@@ -49,8 +115,6 @@ header .nav-ul a{
   
   <canvas id="myCanvas" width="1903" height="300" style="background-color:#545454;"></canvas>
 
-  <canvas id="myCanvas3" width="200" height="200" style="background-color:#545454;"></canvas>
-  
 
 </div>
 <div style="position:relative;left:110px;top:601px;font-size:20px;">
@@ -59,25 +123,13 @@ header .nav-ul a{
 
  </div>
   
-  
+ 
  
   
   
   <script>
 
-  var o = document.getElementById("myCanvas3");
-  var ops = o.getContext("2d");
-    
-  ops.textAlign="center"
-  ops.font = "50px Verdana";
-  ops.fillStyle = "#fafafa";
-  ops.fillText("khelli", 100, 100);
-	
-  
-  o.style.top="200px";
-  o.style.position="absolute";
 
-  
     
     
   var c = document.getElementById("myCanvas");
@@ -103,16 +155,3 @@ header .nav-ul a{
 
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
