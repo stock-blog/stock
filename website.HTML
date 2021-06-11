@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stock-blog</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
 </head>
 <style>
   
@@ -90,36 +93,79 @@
   
 body {
     overflow-x: hidden !important;
+
 }
 .container {
     max-width: 100% !important;
     overflow-x: hidden !important;
+
 }
 
+.koko_teksti{
+  	
+    
+  }  
+  
+.otsikko{
+  text-align:center;
+  font-family:Times New Roman;
+  font-size:40px;
+    
+  }  
+  
+  
+.teksti{
+	
+
+	width:500px;
+  font-family:Times New Roman;
+  font-size:30px;
+  position: absolute;
+  left: 700;
+  top:150;
+  text-align:center;
+}
+	
+
+  
 </style>
 
 
 <body>
+  
+  
+  
   <canvas id="myCanvas2" width="1903" height="45" style="background-color:#696969;border:1px solid black;"></canvas>
   
   
   
   <nav role="navigation">
 
-    <button class="btn"><i class="fa fa-home"></i> Home</button>
+    <button
+onclick="window.location.href='https://stock-blog.github.io/stock/website.HTML';"
+class="btn"><i class="fa fa-home"></i> Home</button>
   	
-    <button class="Stock_picks"> Stock picks</button>
+    <button
+onclick="window.location.href='https://stock-blog.github.io/stock/Stockpicks.HTML';"
+class="Stock_picks"> Stock picks</button>
        
-		<button class="Watchlist"> Watchlist </button>
+		<button
+onclick="window.location.href='https://stock-blog.github.io/stock/Watchlist.HTML';"
+class="Watchlist"> Watchlist </button>
     
-    <button class="Beginnersguide"> Beginner's guide </button>
+    <button
+onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide.HTML';"             class="Beginnersguide"> Beginner's guide </button>
       
     <button onclick="window.location.href='https://stock-blog.github.io/stock/Discuss.HTML';" class="Discuss"> Discuss </button>
   </nav>
-  
+ 
   
 
-
+<article class="Koko_teksti">
+  <h1 class="otsikko">Stock-blog</h1>
+  <p class="teksti">Hello, on this page you will find justified stock picks with a technical analysis. Stock picks are out weekly so i recommend you to check the page every monday. Also remember to do your own due diligence everytime you buy a stock. </p>
+  
+</article>
 
 
 
@@ -129,7 +175,7 @@ body {
 	
 
 </div>
-<div style="position:relative;left:110px;top:601px;font-size:20px;">
+<div style="position:relative;left:110px;top:648px;font-size:20px;">
 
   <a href="mailto:kelli.stock-blog@gmail.com?subject=subject">kelli.stock-blog@gmail.com</a>
 
@@ -143,7 +189,14 @@ body {
 	var c = document.getElementById("myCanvas2");
   var ctx = c.getContext("2d");
 
+	ctx.textAlign="right";
+  ctx.font = "40px Lobster";
 
+  ctx.fillStyle = "#fafafa";
+  ctx.fillText("Stock-blog", 1000, 33);
+	
+    
+    
   c.style.left="0px";
   c.style.top="0px";
   c.style.position="absolute";
