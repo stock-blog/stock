@@ -159,14 +159,7 @@ onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide
 <div id="s9comments"></div>
 <script defer src="https://social9.com/comments/js/s9comments.js"></script>
   
-  
-
-
-<div style="text-align:left;">
-  
-  <canvas id="myCanvas" width="1904" height="300" style="background-color:#545454;"></canvas>
-	
-
+ 
 <div style="position:relative;left:110px;top:620px;font-size:20px;">
 
   <a href="mailto:kelli.stock-blog@gmail.com?subject=subject">kelli.stock-blog@gmail.com</a>
@@ -179,10 +172,10 @@ onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide
   
   <script>
     
-  	var c = 		document.getElementById("myCanvas2");
+  var c = document.getElementById("myCanvas2");
   var ctx = c.getContext("2d");
 
-	ctx.textAlign="right";
+  ctx.textAlign="right";
   ctx.font = "40px Lobster";
 
   ctx.fillStyle = "#fafafa";
@@ -205,9 +198,9 @@ onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide
     
     
     
-  var c = document.getElementById("myCanvas");
+  var c = document.createElement("canvas");
   var ctx = c.getContext("2d");
-  document.body.appendChild("myCanvas");
+  document.body.appendChild(c);
 
   ctx.textAlign="left";
   ctx.font = "16px Verdana";
