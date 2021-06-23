@@ -1,1 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+  <title>Stock-blog</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
+</head>
+<style>
+  
+  a:link {
+  color:white;
+  }
+
+
+.btn {
+  background-color: #696969;
+  border: none;
+  color: white;
+  padding: 11px 15px;
+  font-size: 20px;
+  cursor: pointer;
+ position:relative;bottom:8px;right:8px;
+  border:1px solid black;
+}  
+.btn:hover {
+  color: #1c1c1c;
+} 
+  
+.Stock_picks {
+	background-color: #696969;
+  border: none;
+  color: white;
+  padding: 11px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  position:relative;bottom:8px;right:12px;
+	border:1px solid black;
+}  
+.Stock_picks:hover{
+  	color:#1c1c1c;
+  }
+  
+ 
+ 
+  
+.Watchlist {
+	background-color: #696969;
+  border: none;
+  color: white;
+  padding: 11px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  position:relative;bottom:8px;right:16px;
+	border:1px solid black;
+}  
+.Watchlist:hover{
+  	color:#1c1c1c;
+  }  
+  
+.Beginnersguide {
+	background-color: #696969;
+  border: none;
+  color: white;
+  padding: 11px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  position:relative;bottom:8px;right:20px;
+	border:1px solid black;
+}  
+.Beginnersguide:hover{
+  	color:#1c1c1c;
+	}
+  
+.Discuss {
+	background-color: #696969;
+  border: none;
+  color: white;
+  padding: 11px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  position:relative;bottom:8px;right:24px;
+	border:1px solid black;
+}  
+.Discuss:hover{
+  	color:#1c1c1c;
+	}
+  
+  
+  
+body {
+    overflow-x: hidden !important;
+
+}
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+
+}
+
+
+  
+
+  
+.teksti_edit{
+	position:relative;
+	
+}  
+  
+
+  
+.teksti{
+	
+
+  width:500px;
+  font-family:Times New Roman;
+  font-size:30px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin: 50px 0 0 -59px;
+  text-align:center;  
+  letter-spacing:1px;
+}
+  
+
+.collapsible {
+  
+  position:relative;
+  top:6.25%;
+  left:25%;
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  border: 1px solid black;
+  font-size: 15px;
+	
+}
+
+.collapsible:after{
+	content: '\2bc6';
+  float:right;
+  
+}
+.active:after {
+  content: "\2bc5";
+	float:rigth;
+}
+  
+  
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  position:relative;
+  top:6.25%;
+  left:25%;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #bfbfbf;
+}
+
+
+</style>
+
+
+<body>
+  
+  
+  
+  <canvas id="myCanvas2" width="1903" height="45" style="background-color:#696969;border:1px solid black;"></canvas>
+  
+  
+  
+  <nav role="navigation">
+
+    <button
+onclick="window.location.href='https://stock-blog.github.io/stock/website.HTML';"
+class="btn"><i class="fa fa-home"></i> Home</button>
+  	
+    <button
+onclick="window.location.href='https://stock-blog.github.io/stock/Stockpicks.HTML';"
+class="Stock_picks"> Stock picks</button>
+       
+		<button
+onclick="window.location.href='https://stock-blog.github.io/stock/Watchlist.HTML';"
+class="Watchlist"> Watchlist </button>
+    
+    <button
+onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide.HTML';"             class="Beginnersguide"> Beginner's guide </button>
+      
+    <button onclick="window.location.href='https://stock-blog.github.io/stock/Discuss.HTML';" class="Discuss"> Discuss </button>
+  </nav>
+ 
+<div style="text-align:left;">
+  
+  <canvas id="myCanvas" width="1904" height="300" style="background-color:#545454;"></canvas>
+	
+
+</div>
+
+<div style="position:relative;left:110px;top:648px;font-size:20px;">
+
+  <a href="mailto:kelli.stock-blog@gmail.com?subject=subject">kelli.stock-blog@gmail.com</a>
+
+ </div>
+
+<p style="position:relative;top:6.25%;left:25%;font-weight:bolder;font-size:20px;">Basic Dictionary:</p>
+
+<button class="collapsible">P/E ratio</button>
+
+<div class="content">
+  <p>test</p>
+</div>
+
+<button class="collapsible">P/S ratio</button>
+
+<div class="content">
+  <p>test</p>
+</div>
+
+<button class="collapsible">Liquidity</button>
+
+<div class="content">
+  <p>test</p>
+</div>
+  
+  
+  <script>
+	var canvas = document.getElementById("myCanvas2");
+  var cantx = canvas.getContext("2d");
+
+	cantx.textAlign="right";
+  cantx.font = "40px Lobster";
+
+  cantx.fillStyle = "#fafafa";
+  cantx.fillText("Stock-blog", 1000, 33);
+	
+    
+    
+  canvas.style.left="0px";
+  canvas.style.top="0px";
+  canvas.style.position="absolute";
+	
+    
+    
+    
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+
+
+  ctx.textAlign="left";
+  ctx.font = "16px Verdana";
+
+  ctx.fillStyle = "#fafafa";
+  ctx.fillText("Contact us:", 10, 50);
+
+
+  c.style.left="0px";
+  c.style.top="670px";
+  c.style.position="absolute";
+  
+   
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  
+    
+    
+
+  </script>
+
+</body>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</html>
