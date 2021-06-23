@@ -100,38 +100,37 @@ body {
 
 }
 
-.koko_teksti{
-  	
-    
-  }  
+
   
-.otsikko{
-  text-align:center;
-  font-family:Times New Roman;
-  font-size:40px;
+.cantx{
+  position:absolute;	
+  left:1%;
     
-  }  
+  }
   
 .teksti_edit{
 	position:relative;
-  
+	
+
 }  
+  
+
+  
 .teksti{
 	
 
 	width:500px;
   font-family:Times New Roman;
   font-size:30px;
-  position: absolute;
-  left: 50%;
-  top: 50;
-  margin:-25px 0 0 -25px;
-  text-align:center;
-  
+	position:absolute;
+  top:50%;
+  left:50%;
+	margin: -25px 0 0 -25px;
+  text-align:center;  
+	letter-spacing:1px;
 }
 	
 
-  
 </style>
 
 
@@ -165,12 +164,10 @@ onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide
  
   
 
-<article class="Koko_teksti">
-  <h1 class="otsikko">Stock-blog</h1>
-<div class="teksti_edit">  
+  
+<div class="teksti_edit">
   <p class="teksti">Hello, on this page you will find justified stock picks with a technical analysis. Stock picks are out weekly so i recommend you to check the page every monday. Also remember to do your own due diligence everytime you buy a stock. </p>
   </div>
-</article>
 
 
 
@@ -191,21 +188,21 @@ onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide
   
   
   <script>
-	var c = document.getElementById("myCanvas2");
-  var ctx = c.getContext("2d");
+	var canvas = document.getElementById("myCanvas2");
+  var cantx = canvas.getContext("2d");
 
-	ctx.textAlign="right";
-  ctx.font = "40px Lobster";
+	cantx.textAlign="right";
+  cantx.font = "40px Lobster";
 
-  ctx.fillStyle = "#fafafa";
-  ctx.fillText("Stock-blog", 1000, 33);
+  cantx.fillStyle = "#fafafa";
+  cantx.fillText("Stock-blog", 1000, 33);
 	
     
     
-  c.style.left="0px";
-  c.style.top="0px";
-  c.style.position="absolute";
-
+  canvas.style.left="0px";
+  canvas.style.top="0px";
+  canvas.style.position="absolute";
+	
     
     
     
