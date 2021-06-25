@@ -16,20 +16,31 @@
 
 
 .btn {
+  display:flex;
   background-color: #696969;
   border: none;
   color: white;
   padding: 11px 15px;
   font-size: 20px;
   cursor: pointer;
- position:relative;bottom:8px;right:8px;
+  position:relative;bottom:8px;right:8px;
   border:1px solid black;
-}  
+
+}
+  
 .btn:hover {
   color: #1c1c1c;
 } 
   
+.button-container{
+  	display:flex;
+  	align-content:left;
+    justify-content:left;
+    
+  }
+  
 .Stock_picks {
+	display:flex;
 	background-color: #696969;
   border: none;
   color: white;
@@ -47,7 +58,9 @@
  
   
 .Watchlist {
-	background-color: #696969;
+	display:flex;
+  align-content:center;
+  background-color: #696969;
   border: none;
   color: white;
   padding: 11px 15px;
@@ -61,7 +74,8 @@
   }  
   
 .Beginnersguide {
-	background-color: #696969;
+	display:flex;
+  background-color: #696969;
   border: none;
   color: white;
   padding: 11px 15px;
@@ -75,7 +89,8 @@
 	}
   
 .Discuss {
-	background-color: #696969;
+	display:flex;
+  background-color: #696969;
   border: none;
   color: white;
   padding: 11px 20px;
@@ -92,7 +107,9 @@
   
 body {
     overflow-x: hidden !important;
-
+  	background-image:url("https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg?size=626&ext=jpg&ga=GA1.2.1516153417.1623628800");
+    background-repeat: no-repeat;
+    background-size:1500px;
 }
 .container {
     max-width: 100% !important;
@@ -137,12 +154,12 @@ body {
   
   
   
-  <nav role="navigation">
-
+<nav role="navigation">
+	<div class="button-container">   
     <button
 onclick="window.location.href='https://stock-blog.github.io/stock/website.HTML';"
 class="btn"><i class="fa fa-home"></i> Home</button>
-  	
+  
     <button
 onclick="window.location.href='https://stock-blog.github.io/stock/Stockpicks.HTML';"
 class="Stock_picks"> Stock picks</button>
@@ -155,7 +172,8 @@ class="Watchlist"> Watchlist </button>
 onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide.HTML';"             class="Beginnersguide"> Beginner's guide </button>
       
     <button onclick="window.location.href='https://stock-blog.github.io/stock/Discuss.HTML';" class="Discuss"> Discuss </button>
-  </nav>
+  </div>
+    </nav>
  
   
 
