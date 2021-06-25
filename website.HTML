@@ -9,6 +9,13 @@
 
 </head>
 <style>
+  body, html {
+  	height:100%;
+    margin:0;
+    
+  }
+
+  
   
   a:link {
   color:white;
@@ -16,12 +23,12 @@
 
 
 .btn {
-  display:flex;
+
   background-color: #696969;
   border: none;
   color: white;
-  padding: 11px 15px;
-  font-size: 20px;
+  padding: 0.9rem 0.9rem;
+  font-size: 1rem;
   cursor: pointer;
   position:relative;bottom:8px;right:8px;
   border:1px solid black;
@@ -40,11 +47,10 @@
   }
   
 .Stock_picks {
-	display:flex;
 	background-color: #696969;
   border: none;
   color: white;
-  padding: 11px 15px;
+  padding: 0.9rem 0.9rem;
   font-size: 20px;
   cursor: pointer;
   position:relative;bottom:8px;right:12px;
@@ -58,12 +64,10 @@
  
   
 .Watchlist {
-	display:flex;
-  align-content:center;
   background-color: #696969;
   border: none;
   color: white;
-  padding: 11px 15px;
+  padding: 0.9rem 0.9rem;
   font-size: 20px;
   cursor: pointer;
   position:relative;bottom:8px;right:16px;
@@ -74,11 +78,10 @@
   }  
   
 .Beginnersguide {
-	display:flex;
   background-color: #696969;
   border: none;
   color: white;
-  padding: 11px 15px;
+  padding: 0.9rem 0.9rem;
   font-size: 20px;
   cursor: pointer;
   position:relative;bottom:8px;right:20px;
@@ -89,17 +92,16 @@
 	}
   
 .Discuss {
-	display:flex;
   background-color: #696969;
   border: none;
   color: white;
-  padding: 11px 20px;
+  padding: 0.9rem 0.9rem;
   font-size: 20px;
   cursor: pointer;
   position:relative;bottom:8px;right:24px;
 	border:1px solid black;
 }  
-.Discuss:hover{
+.Discuss:hover {
   	color:#1c1c1c;
 	}
   
@@ -108,9 +110,16 @@
 body {
     overflow-x: hidden !important;
   	background-image:url("https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg?size=626&ext=jpg&ga=GA1.2.1516153417.1623628800");
+    height:100%;
+    background-position:center;
     background-repeat: no-repeat;
-    background-size:1500px;
+    background-size:cover;
+  
+  
 }
+  
+
+  
 .container {
     max-width: 100% !important;
     overflow-x: hidden !important;
@@ -147,14 +156,16 @@ body {
 
 
 <body>
+
   
-  
-  
+ 
   <canvas id="myCanvas2" width="1903" height="45" style="background-color:#696969;border:1px solid black;"></canvas>
   
-  
-  
+    
+
+ 
 <nav role="navigation">
+  
 	<div class="button-container">   
     <button
 onclick="window.location.href='https://stock-blog.github.io/stock/website.HTML';"
@@ -173,11 +184,11 @@ onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide
       
     <button onclick="window.location.href='https://stock-blog.github.io/stock/Discuss.HTML';" class="Discuss"> Discuss </button>
   </div>
-    </nav>
- 
-  
+     
+  </nav>
 
   
+
 <div class="teksti_edit">
   <p class="teksti">Hello, on this page you will find justified stock picks with a technical analysis. Stock picks are out weekly so i recommend you to check the page every monday. Also remember to do your own due diligence everytime you buy a stock. </p>
   </div>
@@ -196,7 +207,7 @@ onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide
 
  </div>
   
- 
+
  
   
   
