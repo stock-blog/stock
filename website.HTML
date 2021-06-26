@@ -109,16 +109,16 @@
   
 body {
     overflow-x: hidden !important;
-  	background-image:url("https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg?size=626&ext=jpg&ga=GA1.2.1516153417.1623628800");
-    height:100rm;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size:cover;
-  
+
   
 }
   
-
+img{
+	width:100%;
+  height:auto;
+  overflow:hidden;
+  
+}
   
 .container {
     max-width: 100% !important;
@@ -142,13 +142,28 @@ body {
 
   width:500px;
   font-family:Times New Roman;
-  font-size:30px;
+  font-size:2vw;
   position:absolute;
   top:50%;
   left:50%;
   margin: 50px 0 0 -59px;
   text-align:center;  
   letter-spacing:1px;
+}
+
+#myCanvas2{
+  width:100rem;
+
+    
+  }
+.otsikko {
+	font-family:Lobster;
+  font-size:2.4vw;
+  color:#fafafa;
+  position:absolute;
+  top:-4.5%;
+  right:33%;  
+  
 }
 	
 
@@ -157,15 +172,16 @@ body {
 
 <body>
 
-  
+
  
-  <canvas id="myCanvas2" width="1903" height="45" style="background-color:#696969;border:1px solid black;"></canvas>
-  
+
+<canvas id="myCanvas2"></canvas>
+
     
 
  
 <nav role="navigation">
-  
+  <h1 class="otsikko">Stock-Blog</h1>
 	<div class="button-container">   
     <button
 onclick="window.location.href='https://stock-blog.github.io/stock/website.HTML';"
@@ -215,19 +231,11 @@ onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide
 	var canvas = document.getElementById("myCanvas2");
   var cantx = canvas.getContext("2d");
 
-	cantx.textAlign="right";
-  cantx.font = "40px Lobster";
-
-  cantx.fillStyle = "#fafafa";
-  cantx.fillText("Stock-blog", 1000, 33);
-	
-    
-    
-  canvas.style.left="0px";
-  canvas.style.top="0px";
+  
   canvas.style.position="absolute";
-	
-    
+  canvas.style.backgroundColor="#696969";
+  canvas.style.border="1px solid black";  
+  canvas.style.height = "2.75rem";
     
     
   var c = document.getElementById("myCanvas");
