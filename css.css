@@ -30,7 +30,9 @@
 .navbar-text{
   color: #fafafa;
   font-family: lobster;
-
+  margin-left: 15rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .navbar-custom{
@@ -69,25 +71,24 @@
   
     
   
-    
-  .teksti_edit{
-      position:relative;
-      
-  }  
+ 
     
   
     
   .text-center{
       
-    width:500px;
+    width:25rem;
     font-family:Times New Roman;
-    font-size:2vw;
+    font-size:1.5vw;
     position:absolute;
     top:5rem;
     left:45rem;
     margin: 50px 0 0 -59px;
     text-align:center;  
     letter-spacing:1px;
+    overflow: hidden;
+
+
   }
   
   .panel-footer.panel-custom {
