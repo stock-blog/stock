@@ -154,8 +154,12 @@ img{
   letter-spacing:1px;
 }
 
-#myCanvas2{
+.myCanvas2{
+  background-color:#545454;
   width:100rem;
+  height:2.75rem;
+	position:absolute;
+
 
     
   }
@@ -171,6 +175,32 @@ img{
 }
 	
 
+.myCanvas{
+	background-color:#545454;
+  width:100rem;
+  height:20rem;
+	position:absolute;
+  top:40rem;
+  
+	
+}
+  
+.email{
+	position:absolute;
+  top:3.9rem;
+  left:7rem;
+  font-size:1.2vw;
+}
+  
+.contact{
+	position:absolute;
+  top:2.7rem;
+  left:1rem;
+  font-size:1.2vw;
+  color:#fafafa;
+  
+}
+
 </style>
 
 
@@ -179,15 +209,18 @@ img{
 
  
 
-<canvas id="myCanvas2"></canvas>
+
 
     
 
  
 <nav role="navigation">
-  <h1 class="otsikko">Stock-Blog</h1>
-	<div class="button-container">   
-    <button
+  <footer class="myCanvas2">
+  	
+    <h1 class="otsikko">Stock-Blog</h1>
+	 <div class="button-container">  
+     
+        <button
 onclick="window.location.href='https://stock-blog.github.io/stock/website.HTML';"
 class="btn"><i class="fa fa-home"></i> Home</button>
   
@@ -204,6 +237,15 @@ onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide
       
     <button onclick="window.location.href='https://stock-blog.github.io/stock/Discuss.HTML';" class="Discuss"> Discuss </button>
   </div>
+    
+    
+    
+    
+    
+    
+  </footer>
+   
+
      
   </nav>
 
@@ -217,13 +259,16 @@ onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide
 
 <div style="text-align:left;">
   
-  <canvas id="myCanvas" width="1904" height="300" style="background-color:#545454;"></canvas>
+  <footer class="myCanvas">
+  	 <a class="email" href="mailto:kelli.stock-blog@gmail.com?subject=subject">kelli.stock-blog@gmail.com</a>
+    <p class="Contact">Contact us: </p>
+  </footer>
 	
 
 </div>
 <div style="position:relative;left:110px;top:648px;font-size:20px;">
 
-  <a href="mailto:kelli.stock-blog@gmail.com?subject=subject">kelli.stock-blog@gmail.com</a>
+ 
 
  </div>
   
@@ -232,33 +277,7 @@ onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide
   
   
   <script>
-	var canvas = document.getElementById("myCanvas2");
-  var cantx = canvas.getContext("2d");
 
-  
-  canvas.style.position="absolute";
-  canvas.style.backgroundColor="#696969";
-  canvas.style.border="1px solid black";  
-  canvas.style.height = "2.75rem";
-    
-    
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-
-
-  ctx.textAlign="left";
-  ctx.font = "16px Verdana";
-
-  ctx.fillStyle = "#fafafa";
-  ctx.fillText("Contact us:", 10, 50);
-
-
-  c.style.left="0px";
-  c.style.top="670px";
-  c.style.position="absolute";
-  
-  
-    
     
 
   </script>
