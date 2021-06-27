@@ -1,189 +1,118 @@
 
   body, html {
-  height:100%;
-  margin:0;
+    height:100%;
+    margin:0;
+      
+    }
+  
     
-  }
-
-* {
-	box-sizing:border-box;
+    a:link {
+    color:white;
+    }
   
-}  
   
-  a:link {
-  color:white;
+  .btn {
+  
+    background-color: #696969;
+    color: white;
+    cursor: pointer;
+    border:1px solid black;
+    border-radius: 0;
+    position: absolute;
+    left: -1rem;
+
   }
+    
+  .btn:hover {
+    color: #1c1c1c;
+  } 
 
-
-.btn {
-
-  background-color: #696969;
-  border: none;
-  color: white;
-  padding: 0.9rem 0.9rem;
-  font-size: 1rem;
-  cursor: pointer;
-  position:relative;bottom:10px;right:8px;
-  border:1px solid black;
+.navbar-text{
+  color: #fafafa;
+  font-family: lobster;
 
 }
-  
-.btn:hover {
-  color: #1c1c1c;
-} 
-  
-.button-container{
-  	display:flex;
-  	align-content:left;
-    justify-content:left;
+
+.navbar-custom{
+  background-color: #696969;
+
+}
+
+  .fixed-bottom{
+    background-color: #333333;
+    position: fixed;
+    height: 10rem;
+    bottom: 0;
+
+  }
+
+  body {
+      overflow-x: hidden !important;
+      display: flex;
+      flex-flow: column;
     
   }
+
+  img{
+      width:100%;
+    height:auto;
+    overflow:hidden;
+    
+  }
+    
+  .container {
+      max-width: 100% !important;
+      overflow-x: hidden !important;
   
-.Stock_picks {
-	background-color: #696969;
-  border: none;
-  color: white;
-  padding: 0.9rem 0.9rem;
-  font-size: 20px;
-  cursor: pointer;
-  position:relative;bottom:10px;right:12px;
-	border:1px solid black;
-}  
-.Stock_picks:hover{
-  	color:#1c1c1c;
   }
   
- 
- 
   
-.Watchlist {
-  background-color: #696969;
-  border: none;
-  color: white;
-  padding: 0.9rem 0.9rem;
-  font-size: 20px;
-  cursor: pointer;
-  position:relative;bottom:10px;right:16px;
-	border:1px solid black;
-}  
-.Watchlist:hover{
-  	color:#1c1c1c;
+    
+  
+    
+  .teksti_edit{
+      position:relative;
+      
   }  
-  
-.Beginnersguide {
-  background-color: #696969;
-  border: none;
-  color: white;
-  padding: 0.9rem 0.9rem;
-  font-size: 20px;
-  cursor: pointer;
-  position:relative;bottom:10px;right:20px;
-	border:1px solid black;
-}  
-.Beginnersguide:hover{
-  	color:#1c1c1c;
-	}
-  
-.Discuss {
-  background-color: #696969;
-  border: none;
-  color: white;
-  padding: 0.9rem 0.9rem;
-  font-size: 20px;
-  cursor: pointer;
-  position:relative;bottom:10px;right:24px;
-	border:1px solid black;
-}  
-.Discuss:hover {
-  	color:#1c1c1c;
-	}
-  
-  
-  
-body {
-    overflow-x: hidden !important;
-
-  
-}
-  
-img{
-	width:100%;
-  height:auto;
-  overflow:hidden;
-  
-}
-  
-.container {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-
-}
-
-
-  
-
-  
-.teksti_edit{
-	position:relative;
-	
-}  
-  
-
-  
-.teksti{
-	
-
-  width:500px;
-  font-family:Times New Roman;
-  font-size:2vw;
-  position:absolute;
-  top:5rem;
-  left:45rem;
-  margin: 50px 0 0 -59px;
-  text-align:center;  
-  letter-spacing:1px;
-}
-
-.myCanvas2{
-  background-color:#545454;
-  width:100rem;
-  height:2.75rem;
-	position:absolute;
-
-
     
+  
+    
+  .text-center{
+      
+    width:500px;
+    font-family:Times New Roman;
+    font-size:2vw;
+    position:absolute;
+    top:5rem;
+    left:45rem;
+    margin: 50px 0 0 -59px;
+    text-align:center;  
+    letter-spacing:1px;
   }
-.otsikko {
-	font-family:Lobster;
-  font-size:2.4vw;
-  color:#fafafa;
-  position:absolute;
-  top:-3.4rem;
-  left:55rem;  
+  
+  .panel-footer.panel-custom {
+    background:#696969;
+    color: white;
+    margin-top: auto;
+    height: 3rem;
+
 
 }
-	
 
-.myCanvas{
-	background-color:#545454;
-  width:100rem;
-  height:20rem;
-	position:absolute;
-  top:40rem;
+      
+
+  .email{
+    text-decoration: underline;
+ 
+  }
+    
+  .footer-text{
+
+    font-size:1vw;
+    color:#fafafa;
+    position: absolute;
+    top:2rem;
+    
+
+  }
   
-	
-}
-  
-.email{
-	position:absolute;
-  top:3.9rem;
-  left:7rem;
-  font-size:1.2vw;
-}
-  
-.contact{
-	text-align:center;
-  font-size:1.2vw;
-  color:#fafafa;
-  
-}
