@@ -1,119 +1,100 @@
-
-  body, html {
-    height:100%;
-    margin:0;
-      
-    }
-  
+body, html {
+  height:100%;
+  margin:0;
     
-    a:link {
-    color:white;
-    }
+  }
+
   
+  a:link {
+  color:white;
+  }
+
   
-  .btn {
+
+  #title{
+
   
-    background-color: #696969;
-    color: white;
-    cursor: pointer;
-    border:1px solid black;
-    border-radius: 0;
-    position: absolute;
-    left: -1rem;
+    color: #fafafa;
+    font-family: lobster;
 
   }
-    
-  .btn:hover {
-    color: #1c1c1c;
-  } 
 
-.navbar-text{
-  color: #fafafa;
-  font-family: lobster;
-  margin-left: 15rem;
-  overflow: hidden;
-  white-space: nowrap;
-}
 
-.navbar-custom{
-  background-color: #696969;
+
+.fixed-bottom{
+  background-color: #333333;
+  position: fixed;
+  height: 10rem;
+  bottom: 0;
 
 }
 
-  .fixed-bottom{
-    background-color: #333333;
-    position: fixed;
-    height: 10rem;
-    bottom: 0;
+body {
+    overflow-x: hidden !important;
+    display: flex;
+    flex-flow: column;
+  
+}
+
+img{
+    width:100%;
+  height:auto;
+  overflow:hidden;
+  
+}
+  
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+
+}
+  #t{
+
+    color: #fafafa;
+
+  }
+  #t:hover{
+    color: #696969;
 
   }
 
-  body {
-      overflow-x: hidden !important;
-      display: flex;
-      flex-flow: column;
+
+
+  .text-responsive {
+    text-align: center;
     
+    font-size: calc(100% + 0.1vw + 0.1vh);
+    width: calc(100% - 35vw - 35vh);
   }
 
-  img{
-      width:100%;
-    height:auto;
-    overflow:hidden;
-    
-  }
-    
-  .container {
-      max-width: 100% !important;
-      overflow-x: hidden !important;
-  
-  }
-  
-  
-    
-  
- 
-    
-  
-    
-  .text-center{
-      
-    width:25rem;
-    font-family:Times New Roman;
-    font-size:1.5vw;
-    position:absolute;
-    top:5rem;
-    left:45rem;
-    margin: 50px 0 0 -59px;
-    text-align:center;  
-    letter-spacing:1px;
-    overflow: hidden;
-
+  .container-fluid{
+    border: none;
 
   }
   
-  .panel-footer.panel-custom {
-    background:#696969;
-    color: white;
-    margin-top: auto;
-    height: 3rem;
+
+.panel-footer.panel-custom {
+  background:#696969;
+  color: white;
+  margin-top: auto;
+  height: 3rem;
 
 
 }
 
-      
 
-  .email{
-    text-decoration: underline;
- 
-  }
-    
-  .footer-text{
 
-    font-size:1vw;
-    color:#fafafa;
-    position: absolute;
-    top:2rem;
-    
+.email{
+  text-decoration: underline;
 
-  }
+}
   
+.footer-text{
+
+  font-size:1vw;
+  color:#fafafa;
+  position: absolute;
+  top:2rem;
+  
+
+}
