@@ -60,16 +60,33 @@ img{
 
 
 
-  .text-responsive {
+  .container {
     text-align: center;
+    width: 2em 0;
     
-    font-size: calc(100% + 0.1vw + 0.1vh);
-    width: calc(100% - 35vw - 35vh);
   }
-
-  .container-fluid{
-    border: none;
-
+  @media (min-width: 544px) {  
+    p {font-size:  1rem;
+      width: 20rem;
+    } /*1rem = 16px*/
+  }
+  @media (min-width: 768px) {  
+    p {font-size:1rem;
+      width: 20rem;
+    
+    } /*1rem = 16px*/
+  }
+  @media (min-width: 992px) { 
+    p {font-size:1.25rem;
+      width: 20rem;
+    } /*1rem = 16px*/
+  }
+  @media (min-width: 1200px) {  
+    p {font-size:1.5rem;
+      width: 30rem;
+    
+    
+    } /*1rem = 16px*/    
   }
   
 
