@@ -1,1 +1,119 @@
+body, html {
+  height:100%;
+  margin:0;
+    
+  }
 
+  
+  a:link {
+  color:white;
+  }
+
+  
+
+  #title{
+
+  
+    color: #fafafa;
+    font-family: Lobster;
+
+  }
+
+
+
+.fixed-bottom{
+  background-color: #333333;
+  position: fixed;
+  height: 10rem;
+  bottom: 0;
+
+}
+
+body {
+    overflow-x: hidden !important;
+    display: flex;
+    flex-flow: column;
+  
+}
+
+img{
+    width:100%;
+  height:auto;
+  overflow:hidden;
+  
+}
+  
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+
+}
+  #t{
+
+    color: #fafafa;
+
+  }
+  #t:hover{
+    color: #696969;
+
+  }
+
+
+
+  .container {
+    text-align: center;
+    width: 2em 0;
+    
+  }
+  @media (min-width: 544px) {  
+    p {font-size:  1rem;
+      width: 20rem;
+    } /*1rem = 16px*/
+  }
+  @media (min-width: 768px) {  
+    p {font-size:1rem;
+      width: 20rem;
+    
+    } /*1rem = 16px*/
+  }
+  @media (min-width: 992px) { 
+    p {font-size:1.25rem;
+      width: 20rem;
+    } /*1rem = 16px*/
+  }
+  @media (min-width: 1200px) {  
+    p {font-size:1.5rem;
+      width: 30rem;
+    
+    
+    } /*1rem = 16px*/    
+  }
+  
+
+.panel-footer.panel-custom {
+  background:#696969;
+  color: white;
+  margin-top: auto;
+  height: 3rem;
+
+
+}
+
+
+
+.email{
+  text-decoration: underline;
+
+}
+  
+.footer-text{
+
+  font-size:1vw;
+  color:#fafafa;
+  position: absolute;
+  top:2rem;
+  
+
+}
+  
+  
