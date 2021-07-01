@@ -1,342 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stock-blog</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://stock-blog.github.io/stock/website.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<style>
-  
-  a:link {
-  color:white;
-  }
-
-
-.btn {
-  background-color: #696969;
-  border: none;
-  color: white;
-  padding: 11px 15px;
-  font-size: 20px;
-  cursor: pointer;
- position:relative;bottom:8px;right:8px;
-  border:1px solid black;
-}  
-.btn:hover {
-  color: #1c1c1c;
-} 
-  
-.Stock_picks {
-	background-color: #696969;
-  border: none;
-  color: white;
-  padding: 11px 15px;
-  font-size: 20px;
-  cursor: pointer;
-  position:relative;bottom:8px;right:12px;
-	border:1px solid black;
-}  
-.Stock_picks:hover{
-  	color:#1c1c1c;
-  }
-  
- 
- 
-  
-.Watchlist {
-	background-color: #696969;
-  border: none;
-  color: white;
-  padding: 11px 15px;
-  font-size: 20px;
-  cursor: pointer;
-  position:relative;bottom:8px;right:16px;
-	border:1px solid black;
-}  
-.Watchlist:hover{
-  	color:#1c1c1c;
-  }  
-  
-.Beginnersguide {
-	background-color: #696969;
-  border: none;
-  color: white;
-  padding: 11px 15px;
-  font-size: 20px;
-  cursor: pointer;
-  position:relative;bottom:8px;right:20px;
-	border:1px solid black;
-}  
-.Beginnersguide:hover{
-  	color:#1c1c1c;
-	}
-  
-.Discuss {
-	background-color: #696969;
-  border: none;
-  color: white;
-  padding: 11px 20px;
-  font-size: 20px;
-  cursor: pointer;
-  position:relative;bottom:8px;right:24px;
-	border:1px solid black;
-}  
-.Discuss:hover{
-  	color:#1c1c1c;
-	}
-  
-  
-  
-body {
-    overflow-x: hidden !important;
-
-}
-.container {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-
-}
-
-
-  
-
-  
-.teksti_edit{
-	position:relative;
-	
-}  
-  
-
-  
-.teksti{
-	
-
-  width:500px;
-  font-family:Times New Roman;
-  font-size:30px;
-  position:absolute;
-  top:50%;
-  left:50%;
-  margin: 50px 0 0 -59px;
-  text-align:center;  
-  letter-spacing:1px;
-}
-  
-
-.collapsible {
-  
-  position:relative;
-  top:6.25%;
-  left:25%;
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 50%;
-  border: none;
-  text-align: left;
-  border: 1px solid black;
-  font-size: 15px;
-	
-}
-
-.collapsible:after{
-	content: '\2bc6';
-  float:right;
-  
-}
-.active:after {
-  content: "\2bc5";
-	float:rigth;
-}
-  
-  
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
-  position:relative;
-  top:6.25%;
-  left:25%;
-  width:47.6%;
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #bfbfbf;
-}
-
-
-</style>
 
 
 <body>
   
-  
-  
-  <canvas id="myCanvas2" width="1903" height="45" style="background-color:#696969;border:1px solid black;"></canvas>
-  
-  
-  
-  <nav role="navigation">
 
-    <button
-onclick="window.location.href='https://stock-blog.github.io/stock/website.HTML';"
-class="btn"><i class="fa fa-home"></i> Home</button>
-  	
-    <button
-onclick="window.location.href='https://stock-blog.github.io/stock/Stockpicks.HTML';"
-class="Stock_picks"> Stock picks</button>
-       
-		<button
-onclick="window.location.href='https://stock-blog.github.io/stock/Watchlist.HTML';"
-class="Watchlist"> Watchlist </button>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <div class="navbar-brand">
+      <span class="navbar-brand" id="title">Stock-blog</span>
+
+
+    </div>
+
     
-    <button
-onclick="window.location.href='https://stock-blog.github.io/stock/Beginnersguide.HTML';"             class="Beginnersguide"> Beginner's guide </button>
-      
-    <button onclick="window.location.href='https://stock-blog.github.io/stock/Discuss.HTML';" class="Discuss"> Discuss </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link pull-left" id="t" href="https://stock-blog.github.io/stock/website.HTML"><i class="fa fa-home"></i>Home</a>
+        </li>  
+          <a class="nav-link pull-left" id="t" href="https://stock-blog.github.io/stock/Stockpicks.HTML">Stock picks</a>
+
+          <a class="nav-link pull-left" id="t" href="https://stock-blog.github.io/stock/Watchlist.HTML">Watchlist</a>
+          <a class="nav-link pull-left" id="t" href="https://stock-blog.github.io/stock/Beginnersguide.HTML">Beginner's guide</a>
+          <a class="nav-link pull-left" id="t" href="https://stock-blog.github.io/stock/Discuss.HTML">Discuss</a>
+          
+       
+        
+       
+      </ul>
+    </div>
+    
   </nav>
- 
-<div style="text-align:left;">
   
-  <canvas id="myCanvas" width="1904" height="300" style="background-color:#545454;"></canvas>
+
+  <div class="container">
+  <p>
+    Hello, on this page you will find justified stock picks with a technical analysis. Stock picks are out weekly so i recommend you to check the page every monday. Also remember to do your own due diligence everytime you buy a stock.
+  </p>
+  
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="fixed-bottom">
+
+  <!-- Copyright -->
+  <h5 class="footer-text">&emsp; Contact  us: &emsp;<a class="email" href="mailto:kelli.stock-blog@gmail.com?subject=subject">kelli.stock-blog@gmail.com</a>  
+  </h5>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 	
-
-</div>
-
-<div style="position:relative;left:110px;top:648px;font-size:20px;">
-
-  <a href="mailto:kelli.stock-blog@gmail.com?subject=subject">kelli.stock-blog@gmail.com</a>
-
- </div>
-
-<p style="position:relative;top:6.25%;left:25%;font-weight:bolder;font-size:20px;">Basic Dictionary:</p>
-
-<button class="collapsible">P/E ratio</button>
-
-<div class="content">
-  <p>Price to Earnings ratio is a way to value a company. It's the ratio of company's share price to the company's earnings per share.
-	  A high P/E ratio could mean that a company's stock is over-valued, or that investors are expecting high growth in the future. 
-	  Companies that have no earnings or that are losing money do not have a P/E ratio since there are no earnings.</p>
-</div>
-
-<button class="collapsible">P/S ratio</button>
-
-<div class="content">
-  <p>The price-to-sales ratio shows how much investors are willing to pay per dollar of sales or revenue for a stock.
-	A low ratio could imply the stock is undervalued, while a ratio that is higher than average could indicate that the stock is overvalued.
-	P/S ratio does not account whether the company makes any earnings or it ever will.</p>
-</div>
-
-<button class="collapsible">Liquidity</button>
-
-<div class="content">
-  <p>Liquidity is the company's ability to easily turn it's assets or investments into cash without affecting it's market price.</p>
-</div>
-	
-<button class="collapsible">EBIT and EBITDA</button>
-
-<div class="content">
-  <p>EBIT stands for company's earnings before interest and taxes. EBITDA stands for earnings before interest, taxes, depreciation and amortization.
-	These indicators are used for measuring company's financial performance and projecting its earnings potential.</p>
-</div>
-	
-<button class="collapsible">Beta</button>
-
-<div class="content">
-  <p>Beta indicates how volatile a stock's price is, compared to the overall stock market. A beta higher than 1 shows that the stock is more volatile than the overall market.
-	A beta lower than 1 shows that the stock is less volatile than the overall market.</p>
-</div>
-	
-<button class="collapsible">EPS</button>
-
-<div class="content">
-  <p>EPS stands for earnings per share. Earnings per share is a company's net profit divided by the number of common shares it has outstanding. 
-	It indicates how much money a company makes for each share of its stock. Because of this, a higher EPS indicates greater value.
-</p>
-</div>
-
-<button class="collapsible">PEG</button>
-
-<div class="content">
-  <p>PEG stands for price per earnings to growth. The PEG ratio enhances the P/E ratio by adding in expected earnings growth into the calculation.
-	  The PEG ratio is considered to be an indicator of a stock's true value, and similar to the P/E ratio, a lower PEG may indicate that a stock is undervalued.
-	  The PEG for a given company differs usually from one reported source to another, depending on which growth estimate is used in the calculation.
-</p>
-</div>
-
-
 
   
   <script>
-	var canvas = document.getElementById("myCanvas2");
-  var cantx = canvas.getContext("2d");
 
-	cantx.textAlign="right";
-  cantx.font = "40px Lobster";
-
-  cantx.fillStyle = "#fafafa";
-  cantx.fillText("Stock-blog", 1000, 33);
-	
-    
-    
-  canvas.style.left="0px";
-  canvas.style.top="0px";
-  canvas.style.position="absolute";
-	
-    
-    
-    
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-
-
-  ctx.textAlign="left";
-  ctx.font = "16px Verdana";
-
-  ctx.fillStyle = "#fafafa";
-  ctx.fillText("Contact us:", 10, 50);
-
-
-  c.style.left="0px";
-  c.style.top="670px";
-  c.style.position="absolute";
-  
-   
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight){
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      } 
-    });
-  }
-  
-    
     
 
   </script>
 
-</body>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</html>
+  </body>
