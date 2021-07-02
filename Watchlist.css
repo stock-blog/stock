@@ -1,4 +1,3 @@
-<style>
 body, html {
   height:100%;
   margin:0;
@@ -68,28 +67,42 @@ img{
   }
   @media (min-width: 544px) {  
     p {font-size:  1rem;
-      width: 20rem;
+      width: 25rem;
     } /*1rem = 16px*/
+
+
   }
   @media (min-width: 768px) {  
     p {font-size:1rem;
-      width: 20rem;
+      width: 25rem;
     
     } /*1rem = 16px*/
+
   }
   @media (min-width: 992px) { 
     p {font-size:1.25rem;
-      width: 20rem;
+      width: 25rem;
+     
     } /*1rem = 16px*/
+
   }
+  
   @media (min-width: 1200px) {  
     p {font-size:1.5rem;
       width: 30rem;
-    
-    
-    } /*1rem = 16px*/    
+    	}
+
+      
   }
   
+  
+  .text-left{
+  	color:#fafafa;
+    
+  }
+
+
+
 
 .panel-footer.panel-custom {
   background:#696969;
@@ -106,16 +119,3 @@ img{
   text-decoration: underline;
 
 }
-  
-.footer-text{
-
-  font-size:1vw;
-  color:#fafafa;
-  position: absolute;
-  top:2rem;
-  
-
-}
-  
-  
-</style>
