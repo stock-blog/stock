@@ -120,6 +120,34 @@ img{
 
 }
   
+@media (min-width: 200px) {  
+    h6 {font-size:  0.7rem;
+      width: 25rem;
+    } /*1rem = 16px*/
 
+
+  }
+  @media (min-width: 768px) {  
+    h6 {font-size:0.75rem;
+      width: 25rem;
+    
+    } /*1rem = 16px*/
+
+  }
+  @media (min-width: 992px) { 
+    h6 {font-size:0.75rem;
+      width: 25rem;
+     
+    } /*1rem = 16px*/
+
+  }
+  
+  @media (min-width: 1200px) {  
+   h6 {font-size:0.75rem;
+      width: 30rem;
+    	}
+		
+      
+  }
   
   
