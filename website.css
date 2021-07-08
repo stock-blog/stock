@@ -138,7 +138,11 @@ body {
 .email{
   color:white;
 } 
-  
+.email:hover{
+  color:#696969;
+  text-decoration:underline;  
+
+}
   
   
   
