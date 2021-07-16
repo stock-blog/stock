@@ -101,35 +101,6 @@ body, html{
    }
  
  
- 
- 
- @media (min-width: 200px){
-    #disclaimer {
-      font-size: 0.7rem;
-      width: 30rem;
-
-
-    }
-
-
- }
- 
- @media (min-width: 768px) {
-  #disclaimer {
-    font-size: 1rem;
-    width: 40rem;
-
-
-  }
-
-
-
- }
-
-
-
-
- 
  @media (min-width: 200px) {  
      h6 {font-size:  0.7rem;
        width: 25rem;
