@@ -1,7 +1,7 @@
 body, html{  
-    height:20rem;
-     margin:0;
-   
+    height:100rem;
+    margin:0;
+
      }
    
      
@@ -22,7 +22,7 @@ body, html{
    .footer{
       position:absolute;
       left: 0;
-      bottom:-20rem;
+      bottom:-100rem;
       width: 100%;
       height: 7rem; 
       background-color: #353a40;
@@ -40,13 +40,17 @@ body, html{
    }
    
    
-     
    .container {
-       max-width: 100% !important;
-       overflow-x: hidden !important;
-   
-   
-   }
+    height: 50rem;
+    width: 45rem;
+    color: #fafafa;
+    background-color: #353a40;
+    border-radius: 0;
+
+}
+
+
+
      #t{
    
        color: #fafafa;
@@ -59,11 +63,12 @@ body, html{
    
    
    
-     .container {
-       text-align: center;
-       width: 2em 0;
-       
-     }
+
+
+
+
+
+
      @media (min-width: 544px) {  
        p {font-size:  1rem;
          width: 25rem;
