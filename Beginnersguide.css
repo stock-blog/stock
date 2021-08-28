@@ -168,3 +168,57 @@ body, html{
      text-decoration:underline;  
    
    }
+
+  .btn {
+ 	width:100rem;
+  height:5rem;
+  color:#fafafa;
+  background-color:#353a40;
+  font-size:20px;
+  }
+  .btn:hover {
+  background-color:#696969;
+  color:#fafafa;
+  }
+  .collapse {
+  	width:100rem;
+  	color:#000000;
+    font-size:20px;
+    margin: auto;
+  }
+  
+  .container {
+  	margin: auto;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  .hellou {
+  	color:#000000;
+  }
+  
+  
+  #heree {
+  background-color:#ff0000;
+  height:2rem;
+  width:120rem;
+  
+
+  }
+  
+  .halelujaa {
+  color:#000000;
+  position: relative;
+  text-align:center;
+  bottom: -30px;
+  }
+  
+ 
+  .jokkis {
+ 	position: relative;
+  bottom:-1.5rem;
+  height:1rem;
+  width:150rem;
+  background-color:#353a40;
+  border-radius:5rem;
+  }
