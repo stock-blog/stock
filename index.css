@@ -168,3 +168,25 @@ body, html{
      text-decoration:underline;  
    
    }
+
+
+img{
+    position: relative;
+    top: 10rem;
+    left: 50rem;
+    width: 525px;
+    height: auto;
+
+
+}
+
+
+p {
+    position: relative;
+    bottom: 15rem;
+    left: 1.5rem;
+    text-align: center;
+
+
+}
+
