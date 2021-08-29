@@ -169,16 +169,31 @@ body, html{
  
  }
 
-
  img{
   position: sticky;
   margin-top: 20rem;
   left: 50rem;
-  width: 525px;
   height: auto;
 
 
 }
+
+@media (min-width: 200px) {  
+  img {
+    width: 450px;
+    height: auto;
+   } /*1rem = 16px*/
+
+
+}
+@media (min-width: 768px) {  
+  img {font-size:1rem;
+    width: 525px;
+   height: auto;
+  } /*1rem = 16px*/
+
+}
+
 
 
 p {
