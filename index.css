@@ -73,7 +73,7 @@ body, html{
      
    
    @media (min-width: 200px) {  
-     p {font-size:  0.9rem;
+     p {font-size:  0.8rem;
        width: 25rem;
      } /*1rem = 16px*/
  
