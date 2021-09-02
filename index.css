@@ -62,8 +62,16 @@ body, html{
    .container {
      text-align: center;
      width: 2em 0;
+
+    }
+     p {
+      position: relative;
+      left: 1.5rem;
+      text-align: center;
+    
+    }
      
-   }
+   
    @media (min-width: 544px) {  
      p {font-size:  1rem;
        width: 25rem;
@@ -173,24 +181,17 @@ body, html{
 
 
 
-p {
-  position: relative;
-  bottom: 35rem;
-  left: 1.5rem;
-  text-align: center;
-
-}
 
 
 .tradingview-widget-container div div {
   position: relative;
-  top: 8rem;
+  top: 1rem;
   }
  
 @media (min-width: 200px) {  
   .tradingview-widget-container div div {
     width: 95vw !important;
-    height: 70vw !important;
+    height: 75vw !important;
 
 
    } /*1rem = 16px*/
@@ -212,7 +213,7 @@ p {
 
 .tradingview-widget-copyright{
   position: relative;
-  top: 16rem;
+  top: 2rem;
 
 
 }
