@@ -74,7 +74,7 @@ body, html{
    
    @media (min-width: 200px) {  
      p {font-size:  0.8rem;
-       width: 25rem;
+       width: 24rem;
      } /*1rem = 16px*/
  
  
