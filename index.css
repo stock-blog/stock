@@ -169,30 +169,7 @@ body, html{
  
  }
 
- img{
-  position: sticky;
-  margin-top: 20rem;
-  left: 50rem;
-  height: auto;
 
-
-}
-
-@media (min-width: 200px) {  
-  img {
-    width: 450px;
-    height: auto;
-   } /*1rem = 16px*/
-
-
-}
-@media (min-width: 768px) {  
-  img {font-size:1rem;
-    width: 525px;
-   height: auto;
-  } /*1rem = 16px*/
-
-}
 
 
 
@@ -205,10 +182,45 @@ p {
 }
 
 
-#kelli{
-position: relative;
-top: 10rem;
+.tradingview-widget-container div div {
+  position: relative;
+  top: 8rem;
+  }
+ 
+@media (min-width: 200px) {  
+  .tradingview-widget-container div div {
+    width: 70vw !important;
+    height: 70vw !important;
 
+
+   } /*1rem = 16px*/
 
 
 }
+@media (min-width: 768px) {  
+  .tradingview-widget-container div div {
+    width: 45vw !important;
+    height: 25vw !important;
+
+
+
+  } /*1rem = 16px*/
+
+}
+
+
+
+.tradingview-widget-copyright{
+  position: relative;
+  top: 16rem;
+
+
+}
+
+
+
+
+
+
+
+
