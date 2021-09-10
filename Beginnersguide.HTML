@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <meta name="google-site-verification" content="LjLe6OSE2l3nmJEFcuFWASG0iqSEYOsGV7mUJ7alMD4" />
-  <link rel="stylesheet" href="https://stock-blog.github.io/stock/Beginnersguide.css">
+  <link rel="stylesheet" href="Untitled-2.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -18,7 +18,7 @@
 
 
 
-<body>
+<body id="body">
   
 
   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -56,28 +56,28 @@
 <div class="wrapper">
     <div class="container">
         <h2 class="text-center">Here are some of the terms that you see almost everytime when you go to a company's financials page. All of these terms are used to measure a company's value.</h2>
-        <button type="button" class="btn" data-toggle="collapse" data-target="#demo">P/E Ratio</button>
+        <button type="button" id="MyBtn1" class="btn" data-toggle="collapse" data-target="#demo">P/E Ratio</button>
         <div id="demo" class="collapse">
     Price-Earnings ratio relates company’s shares to its earnings per share. A high P/E can tell that a company's stock is overvalued. Companies with no earnings or that are losing money do not have a P/E ratio. The ratio is calculated by dividing the stock price by earnings per share.
         </div>
     </div>
     
     <div class="container">
-        <button type="button" class="btn" data-toggle="collapse" data-target="#demos">P/S Ratio</button>
+        <button type="button" id="MyBtn2" class="btn" data-toggle="collapse" data-target="#demos">P/S Ratio</button>
         <div id="demos" class="collapse">
         Price to Sales ratio shows how much investors are willing to pay per dollar of sales for a stock. A lower than average ratio can show that the stock is undervalued. The P/S ratio does not imply whether the company is making any earnings. P/S is calculated by dividing the stock price by the company’s sales per share. 
         </div>
     </div>
         
     <div class="container">
-        <button type="button" class="btn" data-toggle="collapse" data-target="#demo2">EBIT, EBT and EBITDA</button>
+        <button type="button" id="MyBtn3" class="btn" data-toggle="collapse" data-target="#demo2">EBIT, EBT and EBITDA</button>
         <div id="demo2" class="collapse">
     EBIT means earnings before interest and taxes. EBT stands for earnings before tax. EBITDA stands for earnings before interest, taxes, depreciation and amortization. All of these terms are used to measure a company's financial performance and the potential in the future.  
         </div>
     </div>
         
     <div class="container">
-        <button type="button" class="btn" data-toggle="collapse" data-target="#demo3">BETA Number</button>
+        <button type="button" id="MyBtn4" class="btn" data-toggle="collapse" data-target="#demo3">BETA Number</button>
         <div id="demo3" class="collapse">
     Beta number is a measure of stock’s volatility in relation to the overall market. A beta greater than 1.0 means that the stock is more volatile than the overall market, a beta under 1.0 means that the stock is less volatile compared to the overall market. 
     
@@ -85,7 +85,7 @@
     </div>
         
     <div class="container">
-        <button type="button" class="btn" data-toggle="collapse" data-target="#demo4">EPS Number</button>
+        <button type="button" id="MyBtn5" class="btn" data-toggle="collapse" data-target="#demo4">EPS Number</button>
         <div id="demo4" class="collapse">
     Earnings per share is a company’s net profit divided by the number of common shares it has outstanding. EPS implies how much money a company makes for each share of its stock and is widely used for estimating corporate value. A high EPS indicates greater value. EPS is calculated by subtracting preferred dividends from net income and dividing that by the common shares outstanding.
     
@@ -93,7 +93,7 @@
     </div>
         
     <div class="container">
-        <button type="button" class="btn" data-toggle="collapse" data-target="#demo5">PEG Ratio</button>
+        <button type="button" id="MyBtn6" class="btn" data-toggle="collapse" data-target="#demo5">PEG Ratio</button>
         <div id="demo5" class="collapse">
     PEG stands for P/E to growth. It is used for determining a stock’s value while also factoring the company’s expected earnings growth. PEG is calculated by dividing Price/EPS with EPS growth. 
         </div>
@@ -105,7 +105,7 @@
     
 </div>
 <!-- Footer -->
-<div class="footer sticky-bottom">
+<div class="footer sticky-bottom" id="footer">
   <!-- Copyright -->
   <h6 class="text-left">&emsp; Contact  us: &emsp;<a class="email" href="mailto:kelli.stock-blog@gmail.com?subject=subject">kelli.stock-blog@gmail.com</a>  
   </h6>
@@ -116,10 +116,114 @@
 	
 
   
-  <script>
+<script>
+  var IsCalledOnce = false;
+ 
+  document.getElementById("MyBtn1").addEventListener("click", Myfunction);
+
+  function Myfunction(){
+    if(IsCalledOnce){
+    document.getElementById("body").style.height = "20rem";
+    document.getElementById("footer").style.bottom = "-20rem";
+    IsCalledOnce = false;
+  }
+    else{
+    document.getElementById("body").style.height = "60rem";
+    document.getElementById("footer").style.bottom = "-60rem";
+    IsCalledOnce = true;
+    }
+    
+
+  }
+  document.getElementById("MyBtn2").addEventListener("click", Myfunction);
+
+function Myfunction(){
+  if(IsCalledOnce){
+  document.getElementById("body").style.height = "20rem";
+  document.getElementById("footer").style.bottom = "-20rem";
+  IsCalledOnce = false;
+}
+  else{
+  document.getElementById("body").style.height = "60rem";
+  document.getElementById("footer").style.bottom = "-60rem";
+  IsCalledOnce = true;
+  }
+  
+
+}
+document.getElementById("MyBtn3").addEventListener("click", Myfunction);
+
+  function Myfunction(){
+    if(IsCalledOnce){
+    document.getElementById("body").style.height = "20rem";
+    document.getElementById("footer").style.bottom = "-20rem";
+    IsCalledOnce = false;
+  }
+    else{
+    document.getElementById("body").style.height = "60rem";
+    document.getElementById("footer").style.bottom = "-60rem";
+    IsCalledOnce = true;
+    }
+    
+
+  }
+  document.getElementById("MyBtn4").addEventListener("click", Myfunction);
+
+  function Myfunction(){
+    if(IsCalledOnce){
+    document.getElementById("body").style.height = "20rem";
+    document.getElementById("footer").style.bottom = "-20rem";
+    IsCalledOnce = false;
+  }
+    else{
+    document.getElementById("body").style.height = "60rem";
+    document.getElementById("footer").style.bottom = "-60rem";
+    IsCalledOnce = true;
+    }
+    
+
+  }
+  document.getElementById("MyBtn5").addEventListener("click", Myfunction);
+
+  function Myfunction(){
+    if(IsCalledOnce){
+    document.getElementById("body").style.height = "20rem";
+    document.getElementById("footer").style.bottom = "-20rem";
+    IsCalledOnce = false;
+  }
+    else{
+    document.getElementById("body").style.height = "60rem";
+    document.getElementById("footer").style.bottom = "-60rem";
+    IsCalledOnce = true;
+    }
+    
+
+  }
+  document.getElementById("MyBtn6").addEventListener("click", Myfunction);
+
+  function Myfunction(){
+    if(IsCalledOnce){
+    document.getElementById("body").style.height = "50rem";
+    document.getElementById("footer").style.bottom = "-50rem";
+    IsCalledOnce = false;
+  }
+    else{
+    document.getElementById("body").style.height = "60rem";
+    document.getElementById("footer").style.bottom = "-60rem";
+    IsCalledOnce = true;
+    }
+    
+
+  }
+
+
+
+
+
+
 
     
 
-  </script>
+</script>
 
   </body>
