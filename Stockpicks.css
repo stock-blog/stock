@@ -15,7 +15,7 @@ body {
   .footer {width:130vw}
 
 }
-@media (min-width: 360px) {  
+@media (min-width: 768px) {  
   body {width: 100vw;
   } /*1rem = 16px*/
   .footer {width:100vw}
