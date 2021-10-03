@@ -12,14 +12,16 @@ body {
 @media (min-width: 200px) {  
   body {width: 130vw;
    } /*1rem = 16px*/
-  .footer {width:130vw;}
+  .footer {width:130vw;
+  background-color: #353a40;}
   .prokkes {width: 130vw;}
 
 }
 @media (min-width: 768px) {  
   body {width: 95vw;
   } /*1rem = 16px*/
-  .footer {width:95vw;}
+  .footer {width:95vw;
+    background-color: red;}
   .prokkes {width: 95vw;}
 }
  
@@ -27,7 +29,8 @@ body {
 @media (min-width: 992px) {  
   body {width: 100vw;
   } /*1rem = 16px*/
-  .footer {width: 100vw;}
+  .footer {width: 100vw;
+    background-color: #353a40;}
   .prokkes {width: 100vw;}
 }
 
@@ -50,7 +53,6 @@ body {
     left: 0;
     bottom:-70rem;
     height: 7rem; 
-    background-color:#353a40;
  
  
  
