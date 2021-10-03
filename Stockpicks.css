@@ -19,8 +19,7 @@ body {
 @media (min-width: 368px) {  
   body {width: 100vw;
   } /*1rem = 16px*/
-  .footer {width:100vw;
-    background-color: blue;}
+  .footer {width:100vw;}
 
 }
  
@@ -28,8 +27,7 @@ body {
 @media (min-width: 992px) {  
   body {width: 100vw;
   } /*1rem = 16px*/
-  .footer {width: 100vw;
-    background-color: #353a40;}
+  .footer {width: 100vw;}
 
 }
 
