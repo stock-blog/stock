@@ -12,13 +12,15 @@ body {
 @media (min-width: 200px) {  
   body {width: 130vw;
    } /*1rem = 16px*/
-  .footer {width:130vw}
+  .footer {width:130vw;}
+  .prokkes {width: 130vw;}
 
 }
 @media (min-width: 501px) {  
-  body {width: 100vw;
+  body {width: 100%;
   } /*1rem = 16px*/
-  .footer {width:100vw}
+  .footer {width:100vw;}
+  .prokkes {width: 100vw;}
 }
  
   
@@ -43,8 +45,7 @@ body {
     left: 0;
     bottom:-70rem;
     height: 7rem; 
-    background-color: #353a40;
- 
+    background-color:#353a40;
  
  
  
