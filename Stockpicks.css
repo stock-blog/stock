@@ -17,7 +17,7 @@ body {
   .prokkes {width: 130vw;}
 
 }
-@media (min-width: 768px) {  
+@media (min-width: 568px) {  
   body {width: 95vw;
   } /*1rem = 16px*/
   .footer {width:95vw;
