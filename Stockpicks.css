@@ -17,14 +17,19 @@ body {
 
 }
 @media (min-width: 768px) {  
-  body {width: 100vw;
+  body {width: 95vw;
   } /*1rem = 16px*/
-  .footer {width:100vw;}
-  .prokkes {width: 100vw;}
+  .footer {width:95vw;}
+  .prokkes {width: 95vw;}
 }
  
   
-
+@media (min-width: 992px) {  
+  body {width: 100vw;
+  } /*1rem = 16px*/
+  .footer {width: 100vw;}
+  .prokkes {width: 100vw;}
+}
 
 
 
