@@ -18,10 +18,10 @@ body {
 
 }
 @media (min-width: 368px) {  
-  body {width: 95vw;
+  body {width: 100vw;
   } /*1rem = 16px*/
-  .footer {width:95vw;
-    background-color: red;}
+  .footer {width:100vw;
+    background-color: blue;}
   .prokkes {width: 95vw;}
 }
  
