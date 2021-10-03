@@ -1,14 +1,32 @@
 body, html{  
   height:70rem;
-  margin:0;
-  max-width:100%;
+  width:100vw;
+}
+ 
+body {
+  overflow-x: hidden !important;
+  display: sticky;
+}
 
-   }
+  
+@media (min-width: 200px) {  
+  body {width: 130vw;
+   } /*1rem = 16px*/
+  .footer {width:130vw}
+
+}
+@media (min-width: 768px) {  
+  body {width: 100vw;
+  } /*1rem = 16px*/
+  .footer {width:100vw}
+}
  
-   
- 
- 
-   
+  
+
+
+
+
+
  
    #title{
  
@@ -24,7 +42,6 @@ body, html{
     position:absolute;
     left: 0;
     bottom:-70rem;
-    width: 100%;
     height: 7rem; 
     background-color: #353a40;
  
@@ -33,13 +50,7 @@ body, html{
  
  }
  
- body {
-     overflow-x: hidden !important;
-     display: flex;
-     flex-flow: column;
-   
- }
- 
+
  
  #alempi {
   height: 50rem;
@@ -95,7 +106,7 @@ h3{
   background-color:#353a40;
   border-radius:5rem;
   top: 3rem;
-  width: 100vw;
+  width: 130vw;
   
   
 }
