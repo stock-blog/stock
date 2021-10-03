@@ -14,7 +14,6 @@ body {
    } /*1rem = 16px*/
   .footer {width:130vw;
   background-color: #353a40;}
-  .prokkes {width: 130vw;}
 
 }
 @media (min-width: 368px) {  
@@ -22,7 +21,7 @@ body {
   } /*1rem = 16px*/
   .footer {width:100vw;
     background-color: blue;}
-  .prokkes {width: 95vw;}
+
 }
  
   
@@ -31,7 +30,7 @@ body {
   } /*1rem = 16px*/
   .footer {width: 100vw;
     background-color: #353a40;}
-  .prokkes {width: 100vw;}
+
 }
 
 
